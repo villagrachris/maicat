@@ -1,5 +1,5 @@
 print ("Bienvenido al Supermercado La Ilusión")
-print("Por favor Ingrese su Nombre:")
+print("Por Favor Ingrese su Nombre:")
 Nombre = input()
 print("Ingrese el monto de Carniceria:")
 Gasto_Carniceria=float(input())
