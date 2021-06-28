@@ -24,6 +24,8 @@ Total=Consumo-Descuento
 
 print("Su compra con tarjeta de credito es:",Total)
 
+exit()
+
 
 
 
