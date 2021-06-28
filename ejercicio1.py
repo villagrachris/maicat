@@ -12,7 +12,7 @@ Consumo=Gasto_Carniceria+Gasto_Almacen+Gasto_Verduleria
 
 print("Estimado",Nombre,"Su consumo en pesos es de:",Consumo)
 
-print("Ingrese su numero de Tarjeta")
+print("Ingrese su numero de Tarjeta de credito")
 
 num_tarjeta=int(input())
 
