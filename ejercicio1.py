@@ -16,7 +16,7 @@ print("Ingrese su numero de Tarjeta")
 
 num_tarjeta=int(input())
 
-print("Por pagar con la tarjeta posee un 10% de descuento")
+print(" Su pago con tarjeta de credito posee un 10% de descuento")
 
 Descuento=Consumo*0.1
 
