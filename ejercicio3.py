@@ -13,5 +13,7 @@ marca=input("ingrese la marca del auto:").lower()
 if marca!="fiat" and marca!="chevrolet" and marca!="ford":
         marca=input("Por favor ingresar una nueva marca: ").lower()
         if marca!="fiat" and marca!="chevrolet" and marca!="ford":
-           print("Ustde ingreso una marca que no tenemos a la venta")
-           exit()   
+           print("Usted ingreso una marca que no tenemos a la venta")
+           exit() 
+
+
