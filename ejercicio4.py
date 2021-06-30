@@ -1,10 +1,8 @@
-def calculo ():
-    a=1
-    b=2
+def calculo (a,b):
     suma=a+b
     return(suma)
 
 
 print("Sistema de Funciones")
-print(calculo())
+print(calculo(2,5))
 
