@@ -54,7 +54,7 @@ def facturacion():
       
             
 print("Bienvenidos a Garbarino Compras")
-ingreso=int(input("1. Para la compra de electrodomesticos.2 Audio/TV.3 Ambos productos"))
+ingreso=int(input("1. Para la compra de electrodomesticos\n 2. Audio/TV\n 3. Ambos productos\n"))
 primer_compra=0.0
 segunda_compra=0.0
 tercer_compra=0.0
