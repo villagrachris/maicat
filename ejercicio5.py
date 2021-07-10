@@ -7,16 +7,17 @@ def ver_libros():
       categoria=input("ingrese la categoria deseada entre infantiles, novelas, policiales y todas:")
       if categoria=="infantiles":
           print(infantiles)
-          return(menu())
+          menu()
       elif categoria=="novelas":
           print(novelas)
-          return(menu())
+          menu()
       elif categoria=="policiales":
           print(policiales)
-          return(menu())
+          menu()
       elif categoria=="todas":
-          print(infantiles,novelas,policiales)
-          return(menu())
+          todos=infantiles+novelas+policiales
+          print(todos)
+          menu()
       else:
         print("Ingreso una categoria incorrecta por favor ingrese las correctas")
         ver_libros()
@@ -29,21 +30,37 @@ def eliminar_libros():
       infantiles.remove(seleccion)
       print("El titulo",seleccion,"que ingreso ha sido removido de la lista de infantiles")
       print(infantiles)
-      return(menu())
+      menu()
     
-
+    elif seleccion in policiales:
+      infantiles.remove(seleccion)
+      print("El titulo",seleccion,"que ingreso ha sido removido de la lista de infantiles")
+      print(policiales)
+      menu()
+    elif seleccion in novelas:
+      infantiles.remove(seleccion)
+      print("El titulo",seleccion,"que ingreso ha sido removido de la lista de infantiles")
+      print(novelas)
+      menu()
+    else:
+     print("No existe el titulo ingreso por favor ingresar otro nuevamente\n") 
+     eliminar_libros()    
+ 
 def menu():
     
     print("Bienvenido al sistema de gestión online de la biblioteca Nacional")
-    seleccion=int(input("Ingrese que la selección que desea realizar. 1. Ver los libros disponibles 2. Eliminar libros 3. Agregar libros 4. Consultat el Stock"))
+    seleccion=int(input("1. Ver los libros disponibles\n 2. Eliminar libros \n 3. Agregar libros \n 4. Consultat el Stock \n 5. Salir" ))
     if seleccion==1:
         ver_libros()
-    elif seleccion==3:
+    elif seleccion==2:
        eliminar_libros()
     #elif seleccion==2:
     ##    agregar_libros()
     ##elif seleccion==4:
-    ##    consultar_stock():            
+    ##    consultar_stock():
+    elif seleccion==5:
+      print("Gracias por su visita a la Biblioteca Nacional")
+      exit()             
     else: menu() 
 
 menu()
