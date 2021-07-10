@@ -89,5 +89,3 @@ def menu():
     else: menu() 
 
 menu()
-
-print(policiales)
