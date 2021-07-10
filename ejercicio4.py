@@ -47,7 +47,9 @@ def facturacion():
          else:
           print("El código ingresado no posee ningún descuento disponible, se debitará de su tarjeta",compra)
           print("Gracias por su compra")
-          exit()   
+          exit()
+      else:
+       print("Debitaremos de su compra",compra)   
    else:
     print("ingreso un numero inferior a 12 digitos de su tarjeta de credito, por reingrese los numeros")
     facturacion()
