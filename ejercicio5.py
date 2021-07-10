@@ -46,6 +46,30 @@ def eliminar_libros():
      print("No existe el titulo ingreso por favor ingresar otro nuevamente\n") 
      eliminar_libros()    
  
+def agregar_libros():
+       
+       
+       categoria=input("ingrese la cotegoria del libro")
+
+       if categoria=="infantiles":
+           titulo=input("ingrese el Titulo del libro:")
+           infantiles.append(titulo)
+           menu()
+       elif categoria=="novelas":
+           titulo=input("ingrese el Titulo del libro:")
+           novelas.append(titulo)
+           print(novelas)
+           menu()
+       elif categoria=="policiales":
+           titulo=input("ingrese el Titulo del libro:")
+           policiales.append(titulo)
+           menu()            
+       else:
+           print("La categoria ingresada no se encuentra por favor reingresarla")
+           agregar_libros()
+
+
+
 def menu():
     
     print("Bienvenido al sistema de gestión online de la biblioteca Nacional")
@@ -54,8 +78,9 @@ def menu():
         ver_libros()
     elif seleccion==2:
        eliminar_libros()
-    #elif seleccion==2:
-    ##    agregar_libros()
+    elif seleccion==3:
+       agregar_libros()
+    
     ##elif seleccion==4:
     ##    consultar_stock():
     elif seleccion==5:
@@ -64,3 +89,5 @@ def menu():
     else: menu() 
 
 menu()
+
+print(policiales)
