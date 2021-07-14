@@ -9,6 +9,4 @@ def compra_propiedad (jugadorb,jugadora):
   
   print(compra)
 
-compra=0
-
 compra_propiedad(jugadorb,jugadora)
