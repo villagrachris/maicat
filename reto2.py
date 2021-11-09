@@ -9,7 +9,9 @@ i=0
 
 while i< len(lista):
     palabra=str.split(lista[i])
-    silaba=str(palabra) 
+    silaba=str(palabra)
+    valor=silaba.find("1")
+    print(valor) 
     if silaba[2]!="1":
      print(chr(int(silaba[2]+silaba[3])))
     elif silaba[2]=="1":
